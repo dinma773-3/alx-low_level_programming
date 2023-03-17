@@ -1,23 +1,28 @@
 #include <stdio.h>
 
-int main() {
-    char letter = 'a';
+/**
+ * main - Entry point
+ *
+ * Description: Prints the lowercase alphabet, followed by the uppercase alphabet,
+ *              with a new line at the end, using putchar only three times
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+    char letter;
 
-    // print lowercase alphabet
-    while (letter <= 'z') {
+    for (letter = 'a'; letter <= 'z'; letter++)
+    {
         putchar(letter);
-        letter++;
     }
-    
-    letter = 'A';
 
-    // print uppercase alphabet
-    while (letter <= 'Z') {
+    for (letter = 'A'; letter <= 'Z'; letter++)
+    {
         putchar(letter);
-        letter++;
     }
 
     putchar('\n');
 
-    return 0;
+    return (0);
 }
