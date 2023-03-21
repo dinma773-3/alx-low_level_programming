@@ -1,5 +1,12 @@
 #include <stdio.h>
-int main() {
-  printf("_ putchar\n");
-  return 0;
+
+/**
+ * main - Entry point of the program
+ *
+ * Return: 0 on success
+ */
+int main(void)
+{
+    printf("_putchar\n");
+    return (0);
 }
