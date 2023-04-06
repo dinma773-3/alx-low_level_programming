@@ -1,6 +1,6 @@
 #include "main.h"
   /**
-*_puts_recursion - Prints a string, followed by a new line.
+*_puts_recursion - function like puts();
 *@s: input
 *Return (0)
 */
