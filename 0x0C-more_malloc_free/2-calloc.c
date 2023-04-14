@@ -9,7 +9,6 @@
  * Return a pointer to the allocated memory
  *        if fails exit
  */
-
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
   void *nem;
