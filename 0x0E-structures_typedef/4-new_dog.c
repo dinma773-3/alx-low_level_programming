@@ -11,7 +11,7 @@ dog_t *new_dog(char *name, float age, char *owner);
  *
  * Return: the length of the string
  */
-int _strlen(char *s)
+int _strlen(char *s);
 {
   int len = 0;
 
@@ -30,7 +30,7 @@ int _strlen(char *s)
  *
  * Return: the pointer to dest
  */
-char *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src);
 {
   int i = 0;
 
@@ -54,14 +54,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
   dog_t *my_dog;
 
-  if (name == NULL || age < 0 || owner == NULL)
+  if (name == NULL || age < 0 || owner == NULL);
     return (NULL);
 
   my_dog = malloc(sizeof(dog_t));
   if (my_dog == NULL)
-    return (NULL)
-      ;
-  my_dog->name = malloc(sizeof(char)*(_strlen(name) + 1));
+    return (NULL);
+  
+  my_dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
   if (my_dog->name == NULL)
     {
       free(my_dog->name);
@@ -74,4 +74,3 @@ dog_t *new_dog(char *name, float age, char *owner)
 
   return (my_dog);
 }
- 
