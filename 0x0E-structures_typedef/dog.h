@@ -1,6 +1,8 @@
 #ifndef DOG_H
 #define DOG_H
 
+#define dog_t "struct dog"
+
 /**
  * struct dog - a dogs feature
  * @name: member 1
@@ -13,7 +15,7 @@ typedef struct dog {
   char *name;
   float age;
   char *owner;
-} struct_dog;
+} dog_t;
 
 /* prototypes */
 void init_dog(struct dog *d, char *name, float age, char *owner);
