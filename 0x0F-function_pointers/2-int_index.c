@@ -1,10 +1,11 @@
 #include "function_pointers.h"
 
 /**
- * int_index - returns the index of the first element for which the cmp function does not return 0
- * @array
+ * int_index - searches for an integer
+ * @array: element bearer
  * @size: is the number of elements in the array array
  * @cmp is a pointer to the function to be used to compare values
+ * @int_index returns the index of the first element for which the cmp function does not return 0
  *
  * Return -1 If no element matches or if size <= 0
  */
