@@ -10,7 +10,6 @@
 unsigned int binary_to_uint(const char *b)
 {
   unsigned int bi_num = 0;
-  unsigned int bit = 1;
   int j;
 
   if (b == NULL)
@@ -18,12 +17,9 @@ unsigned int binary_to_uint(const char *b)
 
   for (j = 0; b[j] != '\0'; j++)
     {
-      if (b[j] == '1')
-        bi_num += bit;
-      else if (b[j] != '0')
-        return (0);
-
-      bit <<= 1;
+      if (*b != '0' && *b != '1')
+	return 0;
+      bi_num = (bi_num << 1) + (*b - '0');
     }
   return (bi_num);
 }
